@@ -9,13 +9,13 @@ public class GoShoppingClient {
 	public static void main(String[] args) {
 		GoShopFactory obj=new GoShopFactory();
 		//Prime Account creation
-		GSPrimeAcc gayatri=(GSPrimeAcc) obj.getNewPrimeAcc(123, "Damon", 800.0f, true);
-		gayatri.bookProduct(gayatri.getCharges());
+		GSPrimeAcc prime=(GSPrimeAcc) obj.getNewPrimeAcc(123, "Damon", 800.0f, true);
+		prime.bookProduct(prime.getCharges());
 		
 		//Normal Account creation
 		
-		GSNormalAcc geeta=(GSNormalAcc) obj.getNewNormalAcc(121, "John", 700.0f,30.0f);
-		geeta.bookProduct(geeta.getCharges());
+		GSNormalAcc normal=(GSNormalAcc) obj.getNewNormalAcc(121, "John", 700.0f,30.0f);
+		normal.bookProduct(normal.getCharges());
 
 	}
 
